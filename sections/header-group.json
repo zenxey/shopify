@@ -80,17 +80,6 @@
         "collection_color_scheme": "default"
       }
     },
-    "custom_liquid_NNKz6U": {
-      "type": "custom-liquid",
-      "name": "Marquee Liquid Code",
-      "settings": {
-        "custom_liquid": "{% assign sale_text = \"SALE 72% OFF\" %}\n{% assign speed = 5 %}\n{% assign bg_color = \"#000000\" %}\n{% assign text_color = \"#ffffff\" %}\n\n<div class=\"marquee-wrapper\" style=\"background: {{ bg_color }}\">\n  <div class=\"marquee-track\">\n    <div class=\"marquee-content\">\n      {% for i in (1..8) %}\n        <span style=\"color: {{ text_color }}\">{{ sale_text }}&nbsp;&nbsp;</span>\n      {% endfor %}\n    </div>\n    <div class=\"marquee-content\">\n      {% for i in (1..8) %}\n        <span style=\"color: {{ text_color }}\">{{ sale_text }}&nbsp;&nbsp;</span>\n      {% endfor %}\n    </div>\n  </div>\n</div>\n\n<style>\n  .marquee-wrapper {\n    overflow: hidden;\n    width: 100%;\n    padding: 10px 0;\n  }\n\n  .marquee-track {\n    display: flex;\n    width: max-content;\n    animation: marquee-left-to-right {{ speed }}s linear infinite;\n  }\n\n  .marquee-content {\n    display: flex;\n    white-space: nowrap;\n  }\n\n  @keyframes marquee-left-to-right {\n    from {\n      transform: translateX(-50%);\n    }\n    to {\n      transform: translateX(0%);\n    }\n  }\n</style>",
-        "color_scheme": "",
-        "section_width": "full-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "176977549368275ebb": {
       "type": "_blocks",
       "settings": {
@@ -124,7 +113,6 @@
   },
   "order": [
     "header_section",
-    "custom_liquid_NNKz6U",
     "176977549368275ebb"
   ]
 }
